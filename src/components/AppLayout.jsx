@@ -3,6 +3,7 @@ import { Link, Outlet, useNavigation } from "react-router-dom";
 
 import CartOverview from "../features/cart/CartOverview";
 import LoadSpinner from "./LoadSpinner";
+import SearchOrders from "../features/order/SearchOrders";
 
 const AppLayout = () => {
 	// Router-DOM Hooks
@@ -16,6 +17,7 @@ const AppLayout = () => {
 			{isLoading && <LoadSpinner />}
 
 			<Link to="/">Sliced Co.</Link>
+			<SearchOrders />
 
 			<main>
 				<Outlet />
