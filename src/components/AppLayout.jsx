@@ -1,31 +1,31 @@
 import React from "react";
-import { Link, Outlet, useNavigation } from "react-router-dom";
+import { Outlet, useNavigation } from "react-router-dom";
 
 import CartOverview from "../features/cart/CartOverview";
 import LoadSpinner from "./LoadSpinner";
-import SearchOrders from "../features/order/SearchOrders";
+import Header from "./Header";
 
 const AppLayout = () => {
-	// Router-DOM Hooks
-	const navigation = useNavigation();
+  // Router-DOM Hooks
+  const navigation = useNavigation();
 
-	// Derived State
-	const isLoading = navigation.state === "loading";
+  // Derived State
+  const isLoading = navigation.state === "loading";
 
-	return (
-		<div className="layout">
-			{isLoading && <LoadSpinner />}
+  return (
+    <div className="grid h-screen grid-rows-[auto_1fr_auto]">
+      {isLoading && <LoadSpinner />}
+      <Header />
 
-			<Link to="/">Sliced Co.</Link>
-			<SearchOrders />
+      <div className="overflow-scroll">
+        <main className="mx-auto max-w-3xl ">
+          <Outlet />
+        </main>
+      </div>
 
-			<main>
-				<Outlet />
-			</main>
-
-			<CartOverview />
-		</div>
-	);
+      <CartOverview />
+    </div>
+  );
 };
 
 export default AppLayout;

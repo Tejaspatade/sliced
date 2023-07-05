@@ -25,20 +25,22 @@ import { Link } from "react-router-dom";
 // ];
 
 function Cart() {
-	// const cart = fakeCart;
+  // const cart = fakeCart;
 
-	return (
-		<div>
-			<Link to="/menu">&larr; Back to menu</Link>
+  return (
+    <div>
+      <Link to="/menu" className="text-sm text-blue-500 hover:text-blue-600">
+        &larr; Back to menu
+      </Link>
 
-			<h2>Your cart, %NAME%</h2>
+      <h2>Your cart, %NAME%</h2>
 
-			<div>
-				<Link to="/order/new">Order pizzas</Link>
-				<button>Clear cart</button>
-			</div>
-		</div>
-	);
+      <div>
+        <Link to="/order/new">Order pizzas</Link>
+        <button>Clear cart</button>
+      </div>
+    </div>
+  );
 }
 
 export default Cart;
