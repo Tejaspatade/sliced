@@ -1,14 +1,18 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Button from "../../components/Button";
 import { formatCurrency } from "../../utils/helpers";
-import { addItem } from "../cart/cartSlice";
+import { addItem, getQuantityById } from "../cart/cartSlice";
+import RemoveItem from "../cart/RemoveItem";
+import UpdateItemQuantity from "../cart/UpdateItemQuantity";
 
 function MenuItem({ pizza }) {
+  // Derived State from props
+  const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
+
   // RTK Hooks
   const dispatch = useDispatch();
-
-  // Derived State
-  const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
+  const cartQuantity = useSelector(getQuantityById(id));
+  const isInCart = cartQuantity > 0;
 
   // Handler Functions
   const handleAddToCart = () => {
@@ -43,7 +47,13 @@ function MenuItem({ pizza }) {
               Sold out
             </p>
           )}
-          {!soldOut && (
+          {isInCart && (
+            <div className="flex items-center gap-3 sm:gap-6">
+              <UpdateItemQuantity pizzaId={id} currentQuantity={cartQuantity} />
+              <RemoveItem pizzaId={id} />
+            </div>
+          )}
+          {!soldOut && !isInCart && (
             <Button type="small" onClick={handleAddToCart}>
               Add to Cart
             </Button>

@@ -31,6 +31,8 @@ const cartSlice = createSlice({
 
       item.quantity--;
       item.totalPrice = item.quantity * item.unitPrice;
+
+      if (item.quantity === 0) cartSlice.caseReducers.removeItem(state, action);
     },
     clearCart(state) {
       state.cart = [];
@@ -42,3 +44,13 @@ export const { addItem, removeItem, incQuantity, decQuantity, clearCart } =
   cartSlice.actions;
 
 export default cartSlice.reducer;
+
+// Util Functions use relect library for large applications to avoid performance issues
+export const getCartTotalQuantity = (state) =>
+  state.cart.cart.reduce((sum, item) => sum + item.quantity, 0);
+
+export const getCartTotalPrice = (state) =>
+  state.cart.cart.reduce((sum, item) => sum + item.totalPrice, 0);
+
+export const getQuantityById = (id) => (state) =>
+  state.cart.cart.find((item) => item.pizzaId === id)?.quantity ?? 0;

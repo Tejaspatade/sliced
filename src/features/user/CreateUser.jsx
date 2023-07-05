@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import Button from "../../components/Button";
 import { updateName } from "./userSlice";
@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 function CreateUser() {
   // RTK Hook
   const dispatch = useDispatch();
+  const userName = useSelector((state) => state.user.userName);
 
   // Router-DOM Hooks
   const navigate = useNavigate();
@@ -27,6 +28,14 @@ function CreateUser() {
     // Navigate to Menu Page
     navigate("/menu");
   }
+
+  // Conditional render
+  if (userName)
+    return (
+      <Button to="/menu" type="primary">
+        Check Out Our Menu, {userName}
+      </Button>
+    );
 
   return (
     <form onSubmit={handleSubmit}>

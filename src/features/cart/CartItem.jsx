@@ -1,8 +1,15 @@
-import Button from "../../components/Button";
+import { useSelector } from "react-redux";
 import { formatCurrency } from "../../utils/helpers";
+import RemoveItem from "./RemoveItem";
+import UpdateItemQuantity from "./UpdateItemQuantity";
+import { getQuantityById } from "./cartSlice";
 
 function CartItem({ item }) {
-  const { name, quantity, totalPrice } = item;
+  // Derived state from props
+  const { pizzaId, name, quantity, totalPrice } = item;
+
+  // RTK hooks
+  const currentQuantity = useSelector(getQuantityById(pizzaId));
 
   return (
     <li className="py-3 sm:flex sm:items-center sm:justify-between">
@@ -11,7 +18,11 @@ function CartItem({ item }) {
       </p>
       <div className="flex items-center justify-between sm:gap-6">
         <p className="text-sm font-bold">{formatCurrency(totalPrice)}</p>
-        <Button type="small">Remove</Button>
+        <UpdateItemQuantity
+          pizzaId={pizzaId}
+          currentQuantity={currentQuantity}
+        />
+        <RemoveItem pizzaId={pizzaId} />
       </div>
     </li>
   );
