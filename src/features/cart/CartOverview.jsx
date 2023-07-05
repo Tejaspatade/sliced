@@ -1,6 +1,10 @@
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 function CartOverview() {
+  // RTK hooks
+  // const cartData = useSelector();
+
   return (
     <div className="flex items-center justify-between bg-stone-800 px-4 py-4 text-sm uppercase text-stone-200 sm:px-6 md:text-base">
       <p className="space-x-6 font-semibold text-stone-300">

@@ -1,7 +1,16 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const UserName = () => {
-  return <div className="hidden text-sm font-semibold md:block">Tejas</div>;
+  // Consuming data from Redux
+  const userName = useSelector((state) => state.user.userName);
+
+  // Conditional Render
+  if (!userName) return null;
+
+  return (
+    <div className="hidden text-sm font-semibold md:block">{userName}</div>
+  );
 };
 
 export default UserName;

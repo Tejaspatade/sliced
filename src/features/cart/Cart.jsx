@@ -1,6 +1,7 @@
 import LinkBtn from "../../components/LinkBtn";
 import Button from "../../components/Button";
 import CartItem from "./CartItem";
+import { useSelector } from "react-redux";
 
 const fakeCart = [
   {
@@ -27,13 +28,17 @@ const fakeCart = [
 ];
 
 function Cart() {
+  // RTK Hooks
+  const username = useSelector((state) => state.user.userName);
+
+  //
   const cart = fakeCart;
 
   return (
     <div className="px-4 py-3">
       <LinkBtn to="/menu">&larr; Back to menu</LinkBtn>
 
-      <h2 className="mt-8 text-xl font-semibold">Your cart,Tejas</h2>
+      <h2 className="mt-8 text-xl font-semibold">Your cart, {username}</h2>
 
       <ul className="mt-3 divide-y divide-stone-300 border-b">
         {cart.map((pizza) => (

@@ -1,8 +1,27 @@
+import { useDispatch } from "react-redux";
 import Button from "../../components/Button";
 import { formatCurrency } from "../../utils/helpers";
+import { addItem } from "../cart/cartSlice";
 
 function MenuItem({ pizza }) {
-  const { name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
+  // RTK Hooks
+  const dispatch = useDispatch();
+
+  // Derived State
+  const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
+
+  // Handler Functions
+  const handleAddToCart = () => {
+    const newCartItem = {
+      pizzaId: id,
+      name,
+      quantity: 1,
+      unitPrice,
+      totalPrice: unitPrice * 1,
+    };
+
+    dispatch(addItem(newCartItem));
+  };
 
   return (
     <li className="flex gap-4 py-4">
@@ -24,7 +43,11 @@ function MenuItem({ pizza }) {
               Sold out
             </p>
           )}
-          <Button type="small">Add to Cart</Button>
+          {!soldOut && (
+            <Button type="small" onClick={handleAddToCart}>
+              Add to Cart
+            </Button>
+          )}
         </div>
       </div>
     </li>
