@@ -9,6 +9,7 @@ import CreateOrder, {
 import Home from "./components/Home";
 import AppLayout from "./components/AppLayout";
 import Error from "./components/Error";
+import { action as updatePriorityAction } from "./features/order/UpdateOrderPriority";
 
 // Declaring Routes
 const router = createBrowserRouter([
@@ -39,6 +40,7 @@ const router = createBrowserRouter([
         path: "/order/:orderId",
         element: <Order />,
         loader: orderLoader,
+        action: updatePriorityAction,
         errorElement: <Error />,
       },
     ],
