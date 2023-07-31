@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="src/pizza-logo.svg" alt="pizza logo" width="200">
+  <img src="https://github.com/Tejaspatade/sliced/assets/70337689/339b66ea-56f3-4337-bb71-c024566b6cda" alt="pizza logo" width="200">
   <h1>🍕 Sliced Co.</h1>
   <em>Pizza Shop App in React ⚛️ & Tailwind CSS :atom:.</em><br/>
   <h4><a href="https://sliced-tejas.netlify.app/" target="_blank">Check Demo</a></h4>
@@ -11,25 +11,25 @@ Das Hotelier is a modern and sophisticated Hotel Management Application built us
 
 The application aims to streamline hotel operations, empowering hotel staff to efficiently handle reservations, manage rooms, access guest information, and perform other crucial tasks. With its intuitive and responsive interface, Das Hotelier provides a seamless experience for both administrators and guests.
 
-![pizza-2](https://github.com/Tejaspatade/sliced/assets/70337689/aa59ac8e-c77e-4abb-9875-9ae4f81f3cfe)
+![pizza-1](https://github.com/Tejaspatade/sliced/assets/70337689/18636f29-b822-418f-b093-d983fb18c2c8)
 
 ## Features
 
 - **Dynamic Menu from API:** The pizza menu is fetched from this [endpoint](https://react-fast-pizza-api.onrender.com/api).
 
-![pizza-5](https://github.com/Tejaspatade/sliced/assets/70337689/e75d3cee-db16-46ce-9097-2edb8322b163)
+![pizza-2](https://github.com/Tejaspatade/sliced/assets/70337689/aa59ac8e-c77e-4abb-9875-9ae4f81f3cfe)
 
 - **SPA Design:** Designed to be a SPA(Single Page Application) withe the UI completely designed with Tailwind CSS.
 
-![pizza-1](https://github.com/Tejaspatade/sliced/assets/70337689/18636f29-b822-418f-b093-d983fb18c2c8)
+![pizza-5](https://github.com/Tejaspatade/sliced/assets/70337689/e75d3cee-db16-46ce-9097-2edb8322b163)
 
 - **Ordering System:** Order items in your cart and track the order using a designated order ID coming from the API. Cart is stored as Redux State with RTK for all state management.
 
-  ![pizza-3](https://github.com/Tejaspatade/sliced/assets/70337689/ea5df7df-9561-4e5d-a428-c72c3dba4dcd)
+![pizza-3](https://github.com/Tejaspatade/sliced/assets/70337689/ea5df7df-9561-4e5d-a428-c72c3dba4dcd)
 
 - **Order Info:** Order info is validated and can also fetch live location.
 
-  ![pizza-4](https://github.com/Tejaspatade/sliced/assets/70337689/391b6a93-f841-4e1d-a16e-aacab7703f25)
+![pizza-4](https://github.com/Tejaspatade/sliced/assets/70337689/391b6a93-f841-4e1d-a16e-aacab7703f25)
 
 ## Technologies Used
 
@@ -37,10 +37,6 @@ The application aims to streamline hotel operations, empowering hotel staff to e
 - Tailwind CSS (Styling)
 - React Router DOM v6.4 (Routing)
 - Redux Toolkit (State Management)
-
-3. SPA design
-4. Redux Toolkit (State Management)
-5. Dynamic Cart checkout
 
 ## Installation and Usage
 
