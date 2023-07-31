@@ -6,9 +6,9 @@
 
 ## Description
 
-Das Hotelier is a modern and sophisticated Hotel Management Application built using React for the frontend, Supabase for the backend, React Router DOM v6.4 for routing, React Query for remote state management, Styled Components for CSS, and Context API for local state management.
+Sliced Co. is a delightful and efficient online platform for pizza enthusiasts! This project is designed to provide users with a seamless and enjoyable shopping experience for their favorite pizza creations.
 
-The application aims to streamline hotel operations, empowering hotel staff to efficiently handle reservations, manage rooms, access guest information, and perform other crucial tasks. With its intuitive and responsive interface, Das Hotelier provides a seamless experience for both administrators and guests.
+By incorporating React, Redux Toolkit, and Tailwind CSS, we've crafted a user-friendly interface with robust state management, allowing users to effortlessly create, modify, and track their pizza orders using unique order IDs provided by the API.
 
 ![pizza-1](https://github.com/Tejaspatade/sliced/assets/70337689/18636f29-b822-418f-b093-d983fb18c2c8)
 
