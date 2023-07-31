@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="https://github.com/Tejaspatade/sliced/assets/70337689/339b66ea-56f3-4337-bb71-c024566b6cda" alt="pizza logo" width="200">
   <h1>🍕 Sliced Co.</h1>
   <em>Pizza Shop App in React ⚛️ & Tailwind CSS :atom:.</em><br/>
   <h4><a href="https://sliced-tejas.netlify.app/" target="_blank">Check Demo</a></h4>
