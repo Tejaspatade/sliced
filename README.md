@@ -49,8 +49,8 @@ By incorporating React, Redux Toolkit, and Tailwind CSS, we've crafted a user-fr
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/das-hotelier.git
-   cd das-hotelier
+   git clone https://github.com/Tejaspatade/sliced.git
+   cd sliced
    ```
 
 2. Install dependencies:
@@ -92,7 +92,7 @@ We welcome contributions to enhance the features and usability of Das Hotelier. 
 If you have any questions or suggestions, please feel free to contact us:
 
 - Email: tjspatade@gmail.com
-- Website: www.das-hotel.vercel.app
+- Website: www.sliced-tejas.netlify.app
 - LinkedIn: linkedin.com/tejpatade
 
 Thank you for using Sliced Co! We hope you like the UI. Happy Slicing! 🍕😋
