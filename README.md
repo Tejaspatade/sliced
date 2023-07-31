@@ -15,13 +15,19 @@ The application aims to streamline hotel operations, empowering hotel staff to e
 
 - **Dynamic Menu from API:** The pizza menu is fetched from this [endpoint](https://react-fast-pizza-api.onrender.com/api).
 
+![pizza-1](https://github.com/Tejaspatade/sliced/assets/70337689/18636f29-b822-418f-b093-d983fb18c2c8)
+
+![pizza-2](https://github.com/Tejaspatade/sliced/assets/70337689/aa59ac8e-c77e-4abb-9875-9ae4f81f3cfe)
+
+![pizza-3](https://github.com/Tejaspatade/sliced/assets/70337689/ea5df7df-9561-4e5d-a428-c72c3dba4dcd)
+
+![pizza-4](https://github.com/Tejaspatade/sliced/assets/70337689/391b6a93-f841-4e1d-a16e-aacab7703f25)
+
+![pizza-5](https://github.com/Tejaspatade/sliced/assets/70337689/e75d3cee-db16-46ce-9097-2edb8322b163)
+
 - **SPA Design:** Designed to be a SPA(Single Page Application) withe the UI completely designed with Tailwind CSS.
 
-![Hotel -3](https://github.com/Tejaspatade/das-hotel/assets/70337689/24d91559-00a0-4607-8383-7f8ca2587d02)
-
 - **Ordering System:** Order items in your cart and track the order using a designated order ID coming from the API. Cart is stored as Redux State with RTK for all state management.
-
-![Hotel -2](https://github.com/Tejaspatade/das-hotel/assets/70337689/7d50aaca-135a-4b81-99c5-41185de43293)
 
 - **Order Info:** Order info is validated and can also fetch live location.
 
