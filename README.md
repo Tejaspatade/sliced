@@ -11,25 +11,25 @@ Das Hotelier is a modern and sophisticated Hotel Management Application built us
 
 The application aims to streamline hotel operations, empowering hotel staff to efficiently handle reservations, manage rooms, access guest information, and perform other crucial tasks. With its intuitive and responsive interface, Das Hotelier provides a seamless experience for both administrators and guests.
 
+![pizza-2](https://github.com/Tejaspatade/sliced/assets/70337689/aa59ac8e-c77e-4abb-9875-9ae4f81f3cfe)
+
 ## Features
 
 - **Dynamic Menu from API:** The pizza menu is fetched from this [endpoint](https://react-fast-pizza-api.onrender.com/api).
-
-![pizza-1](https://github.com/Tejaspatade/sliced/assets/70337689/18636f29-b822-418f-b093-d983fb18c2c8)
-
-![pizza-2](https://github.com/Tejaspatade/sliced/assets/70337689/aa59ac8e-c77e-4abb-9875-9ae4f81f3cfe)
-
-![pizza-3](https://github.com/Tejaspatade/sliced/assets/70337689/ea5df7df-9561-4e5d-a428-c72c3dba4dcd)
-
-![pizza-4](https://github.com/Tejaspatade/sliced/assets/70337689/391b6a93-f841-4e1d-a16e-aacab7703f25)
 
 ![pizza-5](https://github.com/Tejaspatade/sliced/assets/70337689/e75d3cee-db16-46ce-9097-2edb8322b163)
 
 - **SPA Design:** Designed to be a SPA(Single Page Application) withe the UI completely designed with Tailwind CSS.
 
+![pizza-1](https://github.com/Tejaspatade/sliced/assets/70337689/18636f29-b822-418f-b093-d983fb18c2c8)
+
 - **Ordering System:** Order items in your cart and track the order using a designated order ID coming from the API. Cart is stored as Redux State with RTK for all state management.
 
+  ![pizza-3](https://github.com/Tejaspatade/sliced/assets/70337689/ea5df7df-9561-4e5d-a428-c72c3dba4dcd)
+
 - **Order Info:** Order info is validated and can also fetch live location.
+
+  ![pizza-4](https://github.com/Tejaspatade/sliced/assets/70337689/391b6a93-f841-4e1d-a16e-aacab7703f25)
 
 ## Technologies Used
 
